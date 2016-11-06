@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ Copyright (C) 2015 Jacob Klinker
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2016 Jacob Klinker
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -18,5 +17,7 @@
 <resources>
 
     <bool name="sliding_two_panel">false</bool>
+    <bool name="padded_layout">false</bool>
+    <bool name="full_screen_with_header">true</bool>
 
 </resources>

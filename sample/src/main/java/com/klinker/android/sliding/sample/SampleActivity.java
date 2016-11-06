@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Jacob Klinker
+ * Copyright (C) 2016 Jacob Klinker
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -136,7 +136,7 @@ public class SampleActivity extends AppCompatActivity {
     }
 
     public Intent addExpansionArgs(Intent intent) {
-        if (((CheckBox)findViewById(R.id.use_expansion_check)).isChecked()) {
+        if (((CheckBox) findViewById(R.id.use_expansion_check)).isChecked()) {
             intent.putExtra(ARG_USE_EXPANSION, true);
 
             View expansionView = findViewById(R.id.expansion_view);

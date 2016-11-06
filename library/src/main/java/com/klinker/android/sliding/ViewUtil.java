@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Jacob Klinker
+ * Copyright (C) 2016 Jacob Klinker
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,8 +35,9 @@ public class ViewUtil {
     /**
      * Adds a rectangular outline to a view. This can be useful when you want to add a shadow
      * to a transparent view. See b/16856049.
+     *
      * @param view view that the outline is added to
-     * @param res The resources file.
+     * @param res  The resources file.
      */
     public static void addRectangularOutlineProvider(View view, Resources res) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

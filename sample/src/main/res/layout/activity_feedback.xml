@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ Copyright (C) 2015 Jacob Klinker
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2016 Jacob Klinker
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -16,28 +15,28 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:padding="16dp">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-        android:hint="Title"/>
+        android:hint="Title"
+        android:maxLines="1" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:lines="5"
-        android:hint="Feedback"/>
+        android:hint="Feedback"
+        android:lines="5" />
 
     <Button
+        android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Submit"
-        android:id="@+id/submit"/>
+        android:layout_gravity="end"
+        android:text="Submit" />
 
 </LinearLayout>

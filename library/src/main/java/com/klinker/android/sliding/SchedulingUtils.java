@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Jacob Klinker
+ * Copyright (C) 2016 Jacob Klinker
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,9 +26,10 @@ public class SchedulingUtils {
 
     /**
      * Do an action before the drawing occurs.
-     * @param view the view to be drawn.
+     *
+     * @param view          the view to be drawn.
      * @param drawNextFrame whether we should draw the next frame or not.
-     * @param runnable the runnable to run.
+     * @param runnable      the runnable to run.
      */
     public static void doOnPreDraw(final View view, final boolean drawNextFrame,
                                    final Runnable runnable) {

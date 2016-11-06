@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Jacob Klinker
+ * Copyright (C) 2016 Jacob Klinker
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import android.widget.ScrollView;
 
 /**
  * A {@link ScrollView} that doesn't respond or intercept touch events.
- *
+ * <p>
  * This is used in combination with {@link com.klinker.android.sliding.MultiShrinkScroller} so
  * that MultiShrinkScroller can handle all scrolling and saving.
  */
@@ -32,6 +32,7 @@ public class TouchlessScrollView extends ScrollView {
 
     /**
      * Creates a new instance of TouchlessScrollview.
+     *
      * @param context
      */
     public TouchlessScrollView(Context context) {
@@ -40,6 +41,7 @@ public class TouchlessScrollView extends ScrollView {
 
     /**
      * Creates a new instance of TouchlessScrollview.
+     *
      * @param context
      * @param attrs
      */
@@ -49,6 +51,7 @@ public class TouchlessScrollView extends ScrollView {
 
     /**
      * Creates a new instance of TouchlessScrollview.
+     *
      * @param context
      * @param attrs
      * @param defStyleAttr
@@ -59,6 +62,7 @@ public class TouchlessScrollView extends ScrollView {
 
     /**
      * Save the current y scroll position for later.
+     *
      * @return
      */
     @Override

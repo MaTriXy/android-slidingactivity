@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Jacob Klinker
+ * Copyright (C) 2016 Jacob Klinker
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,11 @@ import android.os.Bundle;
 import android.os.Debug;
 import android.os.Handler;
 import android.view.Menu;
+import android.view.View;
 
+import com.klinker.android.peekview.builder.Peek;
+import com.klinker.android.peekview.builder.PeekViewOptions;
+import com.klinker.android.peekview.callback.SimpleOnPeek;
 import com.klinker.android.sliding.SlidingActivity;
 
 /**
@@ -35,6 +39,7 @@ public class TalonActivity extends SlidingActivity {
     /**
      * Initialize our values, this is overridden instead of onCreate as it should be in all
      * sliding activities.
+     *
      * @param savedInstanceState the saved state.
      */
     @Override
@@ -48,6 +53,14 @@ public class TalonActivity extends SlidingActivity {
 
         if (checkMemory()) {
             setContent(R.layout.activity_talon);
+
+            // long clicking on the "stats" card will display the PeekView
+            Peek.into(R.layout.peek_example, new SimpleOnPeek() {
+                @Override
+                public void onInflated(View rootView) {
+                    // we won't do anything here
+                }
+            }).applyTo(this, findViewById(R.id.talon_stats_card));
         }
 
         // delay this so that the animation shows and we don't change the activity colors
@@ -77,6 +90,7 @@ public class TalonActivity extends SlidingActivity {
 
     /**
      * Creates the options menu.
+     *
      * @param menu the menu.
      * @return true.
      */
@@ -89,6 +103,7 @@ public class TalonActivity extends SlidingActivity {
     /**
      * Oops, this is a really big layout with lots of images and no optimizations done to it, older
      * or lower end devices might run out of memory! Sorry to those devs with these devices.
+     *
      * @return true if device has 1GB of memory and can show the content.
      */
     private boolean checkMemory() {

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Jacob Klinker
+ * Copyright (C) 2016 Jacob Klinker
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,6 +27,7 @@ public class FullscreenActivity extends NormalActivity {
 
     /**
      * Make sure we call super to set everything else up, then show as fullscreen.
+     *
      * @param savedInstanceState the saved state.
      */
     @Override

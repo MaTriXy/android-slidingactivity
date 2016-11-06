@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Jacob Klinker
+ * Copyright (C) 2016 Jacob Klinker
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,8 @@ public class ColorUtils {
 
     /**
      * Adjust the alpha of a color.
-     * @param color the color [0x00000000, 0xffffffff]
+     *
+     * @param color  the color [0x00000000, 0xffffffff]
      * @param factor the factor for the alpha [0,1]
      * @return the adjusted color
      */

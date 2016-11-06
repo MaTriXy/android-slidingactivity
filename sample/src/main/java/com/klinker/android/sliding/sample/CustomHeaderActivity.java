@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Jacob Klinker
+ * Copyright (C) 2016 Jacob Klinker
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ public class CustomHeaderActivity extends SlidingActivity {
     /**
      * Initialize our values, this is overridden instead of onCreate as it should be in all
      * sliding activities.
+     *
      * @param savedInstanceState the saved state.
      */
     @Override
